@@ -80,7 +80,7 @@
       -webkit-user-select: none;
     }
 
-    /* next button position*/
+    /* next button */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
@@ -116,7 +116,7 @@
     }
 
     .imageSize {
-      height: 200px;
+      height: 1200%;
       width: 100%;
       object-fit: cover;
     }
@@ -129,7 +129,7 @@
     </div>
 
     <script>
-      let totalImages = 10;
+      let totalImages = 1;
       let y = $('<div>').addClass('xyz');
       for(let i = 1; i < totalImages + 1; i++) {
         x = `<div class="column">
@@ -195,40 +195,6 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="assets/images/modal/pic1.jpeg"
-          style="width: 100%"
-          onclick="currentSlide(1)"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="assets/images/modal/pic2.jpeg"
-          style="width: 100%"
-          onclick="currentSlide(2)"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="assets/images/modal/pic3.jpeg"
-          style="width: 100%"
-          onclick="currentSlide(3)"
-        />
-      </div>
-      <div class="column">
-        <img
-          class="demo cursor"
-          src="assets/images/modal/pic4.jpeg"
-          style="width: 100%"
-          onclick="currentSlide(4)"
-        />
-      </div>
-    </div>
 
     <script>
       function openModal() {
