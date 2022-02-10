@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/apply.css" />
     <title>Apply</title>
 </head>
 
 <body>
+    <!-- Adding spell checker -->
+    <!-- Perfect Tense Script-->
+<script src="https://cdn.jsdelivr.net/npm/perfecttense-editor@latest/dist/pte.umd.js">
+</script>
 
+<script>
+  PerfectTenseEditor({ clientId: "6203cac33a4db032684a67ae" });
+</script>
     <!--Header-->
     <header class="header">
 
@@ -33,31 +41,42 @@
         data-timezone="America/Chicago"
         style="display: block; width: 20%; position: relative; padding-bottom: 5%;border:none; margin: 15px  auto  5px auto ;"
         class="tickcounter" href="//www.tickcounter.com">Countdown</a>
+  
+    <!--navigation buttons-->
+    <div class="buttoncontainer">
+        <a target="_blank" title="Close UP website "
+            href="https://www.closeup.org/high-school/high-school-programs/washington-dc/">View Trip Details</a>
+
+        <a title="Award Requirements" href="#pagecontent">Award Requirements</a>
+        <a title="Matrix" href="matrix.html">Matrix (Internal)</a>
+    </div>
 
     <!-- application -->
+
+
     <div class="container">
-        <form class=applyform>
-            <label for="name">Name</label>
+        <form class="applyform" id="form">
+            <label for="name">Name:</label>
             <input id="name" required>
-            <label for="photo">Upload Your Photo</label>
+            <label for="photo">Upload Your Photo:</label>
             <input id="photo" type="file" accept="image/*" required>
-            <label for="birthdate">Birth Date</label>
+            <label for="birthdate">Birth Date:</label>
             <input id="bod" type="date" required>
             <label for="address">Address </label>
             <input Autocomplete id="address" required>
             <label for="city">City </label>
             <input id="city" value="Laredo" required>
-            <label for="state">State</label>
+            <label for="state">State:</label>
             <input id="state" value="Texas" required>
-            <label for="zipcode">Zip Code</label>
+            <label for="zipcode">Zip Code:</label>
             <input id="zipcode" type="number" required>
-            <label for="homephone">Home Phone Number</label>
+            <label for="homephone">Home Phone Number:</label>
             <input id="homephone" type="tel">
-            <label for="mobilephone">Mobile Phone Number </label>
+            <label for="mobilephone">Mobile Phone Number:</label>
             <input id="mobilephone" type="tel">
-            <label for="email">Email </label>
+            <label for="email">Email:</label>
             <input id="email" type="email" required>
-            <label for="hs">High School</label>
+            <label for="hs">High School:</label>
             <select name="hs" id="hs" radio required>
                 <option value=" "></option>
                 <option value="cigarroa">Cigarroa High School</option>
@@ -81,7 +100,7 @@
                 <option value="unitedsouth">United South High School</option>
                 <option value="trevino">Vidal M Treviño Magnet School</option>
             </select>
-            <label for="graddate">Graduation Date</label>
+            <label for="graddate">Graduation Date:</label>
             <input id="graddate" type="date" required>
             <label for="jors">Are you a Junior or Senior?</label>
             <select name="jors" id="jors" radio required>
@@ -89,90 +108,86 @@
                 <option value="junior">Junior</option>
                 <option value="senior">Senior</option>
             </select>
-            <label for="classrank">Approximate class rank</label>
+            <label for="classrank">Approximate class rank:</label>
             <input id="classrank" type="number" required>
-            <label for="gpa">Approximate GPA</label>
+            <label for="gpa">Approximate GPA:</label>
             <input id="gpa" type="number" required>
             <label for="career">What career or field of study do you plan to pursue?</label>
             <input id="career" required>
-            <label for="clubs">Community activities and clubs<br>
+            <label for="clubs">Community activities and clubs:<br>
                 List high school, community activities, and clubs in which you have been involved<br>
                 for the past two years. Be thorough.
             </label>
             <textarea id="clubs" rows=15 required></textarea>
 
-            <label for="fathername"> Father's Name</label>
+            <label for="fathername">Father's Name:</label>
             <input id="fathername">
-            <label for="fatheroccupation">What is your father's occupation?</label>
+            <label for="fatheroccupation">What is your Father's occupation?</label>
             <input id="fatheroccupation">
-            <label for="ftax">Did father file a 1040 form last year?</label>
+            <label for="ftax">Did your Father file a 1040 form last year?</label>
             <select id="ftax" onchange="showInput('ftax','hiddenf')" radio>
                 <option disabled selected>Select</option>
                 <option>Yes</option>
                 <option>No</option>
             </select>
 
-            <label for="upftx" class="hiddenf"> Please upload father's income tax </label>
-            <input id=uptx type="file" class="hiddenf" />
+            <label for="upftax" class="hiddenf">Please upload Father's income tax:</label>
+            <input id=upftax type="file" class="hiddenf" />
 
 
-            <label for="motherrname"> Mother's name</label>
+            <label for="motherrname">Mother's name:</label>
             <input id="mothername">
             <label for="motheroccupation">What is your Mother's occupation?</label>
             <input id="motheroccupation">
-            <label for="mtax">Did Mother file a 1040 form last year?</label>
+            <label for="mtax">Did your Mother file a 1040 form last year?</label>
             <select id="mtax" radio onchange="showInput('mtax','hiddenm')">
                 <option disabled selected>Select</option>
                 <option>Yes</option>
                 <option>No</option>
             </select>
-            <label for="upmtax" class="hiddenm"> Please upload mother's income tax </label>
+            <label for="upmtax" class="hiddenm">Please upload Mother's income tax:</label>
             <input id="upmtax" class="hiddenm" type="file">
 
-            <label for="guardian">What is your legal guardian's name? (if not father or mother)</label>
-            <input id="guardian" required>
-            <label for="guardianoccupation">What is legal guardian's occupation?</label>
-            <input id="guardianroccupation" required>
-            <label for="gtax">Did legal gaurdian file a 1040 form last year?</label>
+            <label for="guardian">What is your legal guardian's name? (if not Father or Mother)</label>
+            <input id="guardian">
+            <label for="guardianoccupation">What is your legal guardian's occupation?</label>
+            <input id="guardianoccupation">
+            <label for="gtax">Did your legal gaurdian file a 1040 form last year?</label>
             <select id="gtax" radio onchange="showInput( 'gtax','hiddeng')">
                 <option disabled selected>Select</option>
                 <option>Yes</option>
                 <option>No</option>
             </select>
-            <label for="upgtax" class="hiddeng"> Please upload legal guardian's income tax return</label>
+            <label for="upgtax" class="hiddeng">Please upload legal guardian's income tax return:</label>
             <input id="upgtax" type="file" class="hiddeng">
 
 
 
             <label for="familyincome">Total Family Income</label>
             <input id="family" type="number" required>
-            <label for="home">Is home?</label>
-            <select radio>
+            <label for="home">Is your home ___?</label>
+            <select id="home" radio>
                 <option>Rented</option>
                 <option>Housing</option>
                 <option>Owned</option>
                 <option>Mortagage</option>
             </select>
-            <label for="essay">Please upload essay (see award requirements for instructions)</label>
+            <label for="essay">Please upload essay: (see award requirements for instructions)</label>
             <input id="essay" type="file" required>
-            <label for="transcript">Please upload high school transcipt</label>
+            <label for="transcript">Please upload high school transcipt:</label>
             <input id="transcript" type="file" required>
-            <label for="recommendation">Please upload letter of recommendation from teacher or/and counselor</label>
+            <label for="recommendation">Please upload letter of recommendation from teacher or/and counselor:</label>
             <input id="recommendation" type="file" required>
             <label for="recommendation2">Please upload second letter of recommendation from teacher or/and
-                counselor</label>
+                counselor:</label>
             <input id="recommendation2" type="file" required>
-            <label for="covid">Please upload your covid vaccination card</label>
+            <label for="covid">Please upload your COVID vaccination card:</label>
             <input id="covid" type="file" required>
-            <label for="sign">Student Signature</label>
+            <label for="sign">Student Signature:</label>
             <input id="sign" required>
 
-            <input type="submit" class=button>
+            <button id="submit" class="button">Submit</button>
         </form>
-
-        <script src="//www.tickcounter.com/static/js/loader.js" id="tickcounter-sdk"></script>
-        <script src=".assets/js/apply.js"></script>
-
         <!---->
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVp2gmMiANPWKA4E2PfUOCrgufa3ePbRk&libraries=places">
@@ -238,6 +253,13 @@
           
         </script>
     </div>
+
+    <!-- <div id="modal">
+
+    </div> -->
+
+    <script src="//www.tickcounter.com/static/js/loader.js" id="tickcounter-sdk"></script>
+    <script src="./assets/js/apply.js"></script>
 </body>
 
 </html>

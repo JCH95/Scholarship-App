@@ -1,23 +1,37 @@
-## The Socitey of Marth Washington Scholarship Application
+## 🌟 The Socitey of Martha Washington Scholarship Application  
 
-This scholarship application will allow any orgization or school to present their scholarship award and requirements. 
-Applicants will be able to submit their personal information and upload files such as transcripts , directly on the app which will save in a secure local storage. 
-Scholarship officals will be able to pull the applicant's infromation from local storege and use a grading matrix to properly evaluate the applicate. 
+<img src="https://github.com/JCH95/Scholarship-App/blob/67a873f91c87fafebaccbc9a6e1754e05bb52961/Develop/assets/images/logo_blue.jpg" align="right"
+     alt="Society Logo" width="120" height="178">
+This website will help schools and other organizations present their scholarship rewards and requirements.
+Applicants would be able to apply directly on the website and school officials will be able to view 
+and grade applications. 
 
-![My Image](/Scholarship-App/Develop/assets/images/smw_logo.jpg "smw")
+![App Screenshot](https://github.com/JCH95/Scholarship-App/blob/readme/Develop/assets/images/MainPage.JPG)
 
+## Website
 
+[The Society of Martha Washington Scholarship Application](https://jch95.github.io/Scholarship-App/)
 
+## 🧐 Built With
 
-## APP URL 
+* HTML
+* CSS
+* JavaScript
+* Tailwind CSS
+* jQuery
 
+## 👨‍💻 Tech stack
 
+* [Current Weather](https://openweathermap.org/api) for the current weather in Washington, DC.
+* [Countdown Timer](https://tickcounter.com/api)  to see when the exciting trip begins
+* [Google](https://developers.google.com/maps/documentation/javascript/overview)  The Maps JavaScript API
+* ["Cormorant Garamond"](https://fonts.google.com/specimen/Work+Sans) is used as the main font.
 
+## ✍️ Authors
 
-## Authors
-- @AndreaPrado
-- @ChristineSeddon
-- @DamarisPalacios
-- @JoshuaHorger
-- @NormaDiaz
-- @ShylaGonzalez
+* @AndreaPrado
+* @ChristineSeddon
+* @DamarisPalacios
+* @JoshuaHorger
+* @NormaDiaz
+* @ShylaGonzalez

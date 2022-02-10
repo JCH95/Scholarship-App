@@ -6,22 +6,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/matrix.css" />
     <title>Matrix Page</title>
 </head>
 
 <body>
-    <h1 class=" text-3xl font-bold text-center p-12 text-blue-900">Scholarship Commitee Scoring Matrix</h1>
-    <div id="studentinfo">
-        <pre class="text-blue-900 font-sans text-xl">
-        Student's Name: <br>
-        School:<br>
-        Classification:                                      Home Telephone:                                Mobile: 
 
-        Conference Data:                                     Travel Cost:                                     Tuition Due: 
-    </pre>
+    <h1 class=" text-4xl font-bold text-center p-12 text-blue-900 w-full">
+        <img class="w-1/4 inline-block" src=" ./assets/images/logo blue.jpg"> <br><br><br><br>
+        Scholarship Commitee Scoring Matrix
+    </h1>
+    <div class=" m-20 grid grid-cols-6 text-blue-900 font-sans text-xl" id="studentinfo">
+        <div class="  col-span-1 text-right pr-5">Student's Name:</div>
+        <div class=" mb-10 col-span-2 border-2" contenteditable=""></div>
+        <div class="col-span-1 text-right pr-5">School:</div>
+        <div class=" mb-10 col-span-2 border-2" contenteditable=""></div>
 
+        <div class="col-span-1 text-right pr-5">Classification:</div>
+        <div class=" mb-10 col-span-1 border-2" contenteditable=""></div>
+        <div class="col-span-1 text-right pr-5">Home Phone:</div>
+        <div class=" mb-10 col-span-1 border-2" contenteditable=""></div>
+        <div class="col-span-1 text-right pr-5">Mobile Phone</div>
+        <div class=" mb-10 col-span-1 border-2" contenteditable=""></div>
+
+        <div class="col-span-1 text-right pr-5">Conference:</div>
+        <div class="col-span-1 border-2" contenteditable=""></div>
+        <div class="col-span-1 text-right pr-5">Travel Cost:</div>
+        <div class="col-span-1 border-2" contenteditable=""></div>
+        <div class="col-span-1 text-right pr-5">Tuition Due</div>
+        <div class="col-span-1 border-2" contenteditable=""></div>
+
+
+
+
+
+
+
+
+    <div class="buttoncontainer">
+        <a target="_blank" title="Close UP website "
+            href="https://www.closeup.org/high-school/high-school-programs/washington-dc/">View Trip Details</a>
+        <a title="Open Modal " href="#" onclick="showModal()">Apply</a>
+        <a title="Award Requirements" href="#pagecontent">Award Requirements</a>
+        <a title="Donate link" href="#">SMW Members Donate</a>
     </div>
+    
+    </div>
+
+
     <div id="matrix" class="grid grid-cols-12  m-20 text-blue-900 ">
         <!-- Headers -->
         <div class="col-span-2 text-center border-2 border-blue-900 text-2xl p-2 font-bold">Criteria</div>
@@ -33,81 +66,110 @@
 
         <!-- Rows -->
 
-        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold text-blue-900">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
+        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold text-blue-900">Essay</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Superior</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="5">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Excellent</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="4">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Above Average</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="3">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Average</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="2">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Poor</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="1">
+        </div>
 
-        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
+        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Grade Point</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">100+</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="5">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">99-95</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="4">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">94-90</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="3">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">89-90</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="2">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">84-80</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="1">
+        </div>
 
-        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
+        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Income/Salary</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Below $20,000</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="5">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">$2O,000 -$40,000</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="4">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">$41,000 -$50,000</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="3">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">$51,000 -$70,000</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="2">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Over -$70,000</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="1">
+        </div>
 
-        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
+        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Recomendation</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Superior</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="5">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Excellent</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="4">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Above Average</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="3">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Average</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="2">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Fair</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="1">
+        </div>
 
-        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 ">Criteria</div>
+        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold">Extra-Curricular Activities
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Superior</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="5">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Excellent</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="4">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Above Average</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="3">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Average</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="2">
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2">Fair</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2  " contenteditable="false" data-value="1">
+        </div>
 
-        <div class="col-span-2 text-right border-2 border-blue-900 text-3xl p-2 font-bold border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8 ">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8">Criteria</div>
-        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8 ">Criteria</div>
+        <div class="col-span-1 text-right border-2 border-blue-900 text-3xl p-2 font-bold border-t-8">Total</div>
+        <div id="sumtotal"
+            class=" text-red-600 col-span-1 text-right border-2 border-blue-900 text-3xl p-2 font-bold border-t-8">0
+        </div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8"></div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8" data-total="5">0</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8"></div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8" data-total="4">0</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8"></div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8" data-total="3">0</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8"></div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8" data-total="2">0</div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8"></div>
+        <div class="col-span-1 text-left border-2 border-blue-900 text-xl p-2 border-t-8 " data-total="1">0</div>
 
 
         <div class="mt-20 col-span-12" id="notes">
-            <div class="font-bold text-xl ">Notes:</div>
+            <div class="font-bold text-3xl">Notes:</div>
             <div class="note border border-blue-900 p-5" contenteditable=""></div>
             <div class="note border border-blue-900 p-5" contenteditable=""></div>
             <div class="note border border-blue-900 p-5" contenteditable=""></div>
@@ -116,13 +178,17 @@
         </div>
 
 
-
+        <div class="col-span-12 items-center justify-center">
+            <div class=" mx-auto w-80 mt-20 p-5 bg-blue-900 text-white text-center text-2xl rounded-3xl cursor-pointer "
+                id="save" onclick="saveData()">Save
+            </div>
+        </div>
 
 
     </div>
     <script src="./assets/js/matrix.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
+<<<<<<< HEAD=======>>>>>>> 77cf2d99b3be9ea614fb091306d2952617ab3190
 
 </html>

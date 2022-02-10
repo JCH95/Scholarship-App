@@ -8,47 +8,58 @@ body{
     color: navy;
     margin:0;
     padding: 0;
-    
 }
 
-    .container {
-        background-color: navy;
-        padding: 2rem;
-        border-radius: 1rem;
-        border: 2px solid black;
-        display:flex;
-        justify-content: left;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        width: 100vw;
-        right: 6%;
-        margin-bottom: 25px;
-        color:white;
-        text-align:left;
+.container {
+    background-color: navy;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    right: 6%;
+    margin-bottom: 25px;
+    text-align:left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.applyform {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap:  8rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
     
-    }
-    .applyform {
-        display: grid;
-        grid-template-columns: auto auto;
-        row-gap: 1rem;
-        column-gap:  8rem;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-input,label,textarea,select{
+input, textarea, select{
     width:30vw;
     font-size: 20px;
     padding:5px;
     margin: 5px;
+    color: black;
+    background-color: lightgray;
 }
 
-    
+label {
+    color: white;
+    width:30vw;
+    font-size: 20px;
+    padding:5px;
+    margin: 5px;
+}   
 
 img{
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hiddenf,.hiddenm, .hiddeng{
@@ -64,6 +75,27 @@ img{
     cursor:pointer;
     border-radius: 1rem;
     margin: 15px auto;
+}
+
+.buttoncontainer a,#applybutton {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: navy;
+    border: 2px solid white;
+    color: white;
+    margin: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.buttoncontainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+   
+    top: 30px;
+    right: 30px;
 }
 
 .hero{
