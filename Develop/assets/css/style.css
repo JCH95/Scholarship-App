@@ -61,6 +61,8 @@ img {
 }
 
 .hero {
+    display: flex;
+    flex-wrap: nowrap;
     background-image: url("../images/washingtondc.jpg");
     height: 100vh;
     background-position: 0px 0px;
@@ -135,3 +137,19 @@ hr {
     border-style: solid;
 }
 
+@media (max-width: 600px) {
+.hero img {
+    width: auto;
+
+}
+.weather{
+    align-items: left;
+    font-size: 50% ;
+}
+
+body{
+font-size: 50%;
+line-height: 1.5rem;
+}
+
+}

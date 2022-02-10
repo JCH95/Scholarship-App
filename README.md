@@ -11,7 +11,6 @@ This scholarship application will allow any orgization or school to present thei
 
 
 
-
 If you're new to Markdown, read the GitHub guide on [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
 If you need an example of a good README, check out [the VSCode repository](https://github.com/microsoft/vscode).
