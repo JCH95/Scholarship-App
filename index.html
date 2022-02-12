@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
     <title>Scholarship Application</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +32,8 @@
     </div>
     <div class="hero">
         <!-- Weather API -->
-        <hr />
         <div class="weather">
-            <div class="weatherApi">
+            <div class="weatherApi" id="weather">
                 <div class="city">City:</div>
 
                 <div class="temp">Temp:</div>
@@ -46,7 +46,7 @@
             </div>
         </div>
         <!--Title-->
-        <h1>Society of Martha Washington
+        <h1 id="sticky" >Society of Martha Washington
             <div class="subtitle"> Washington DC Trip Scholarship</div>
         </h1>
         <!--Navigation Menus-->
@@ -65,7 +65,7 @@
         <img src="./assets/images/logo_blue.jpg" alt="logo" />
 
         <h2 class="underline">2022 Patriot Scholarship Award Requirements</h2>
-        <p class="bg-slate-200 text-center border-2 border-slate-400 rounded-md mx-40 p-4">
+        <p id="media" class="bg-slate-200 text-center border-2 border-slate-400 rounded-md mx-40 p-4">
             The Society of Martha Washington awards patriot scholarships to deserving students to attend close up
             Washington DC Flagship Program. This civic education program is 6 days/ 5 nights and features meetings
             with
@@ -75,7 +75,7 @@
         </p>
 
         <h3 class="text-center mt-8 underline">Eligibility Requirements</h3>
-        <ul class="bg-slate-200 border-2 border-slate-400 rounded-md text-center list-disc list-inside mx-96">
+        <ul id="media2" class="bg-slate-200 border-2 border-slate-400 rounded-md text-center list-disc list-inside mx-96">
             <li class="mt-4">
                 High school juniors or seniors, male or female.
             </li>
@@ -91,7 +91,7 @@
         </ul>
 
         <h3 class="text-center underline mt-8">Application Requirements</h3>
-        <ul class="bg-slate-200 border-2 border-slate-400 rounded-md text-center list-disc list-inside mb-8 mx-40">
+        <ul id="media3" class="bg-slate-200 border-2 border-slate-400 rounded-md text-center list-disc list-inside mb-8 mx-40">
 
             <li class="mt-4">
                 Society of Martha Washington application.
@@ -109,7 +109,7 @@
                 Photocopy of the first page of previous years 1040 tax form filed by each parent in the household.
             </li>
             <li class="mt-8"> One essay, minimum 350 words, maximum 500 words on either topic:
-                <ul class="indent bg-slate-50 border-2 border-slate-400 rounded-md mb-8 mx-40 p-4 text-center">
+                <ul id="media5" class="indent bg-slate-50 border-2 border-slate-400 rounded-md mb-8 mx-40 p-4 text-center">
                     <li>
                         1) Describe your understanding achievement in-depth and provide the specific planning, training,
                         goals,
@@ -145,7 +145,7 @@
             </li>
         </ul>
 
-        <p class="text-center bg-green-200 border-2 border-slate-400 rounded-md mx-96 my-4">
+        <p id="media4" class="text-center bg-green-200 border-2 border-slate-400 rounded-md mx-96 my-4">
             Deadline to submit complete application is November 12, 2022.
         </p>
     </div>

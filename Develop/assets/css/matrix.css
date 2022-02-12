@@ -18,3 +18,36 @@
     top: 30px;
     right: 30px;
 }
+
+/* Media query */
+@media screen and (max-width: 480px) {
+    #matrix {
+      display: block;  
+    }
+    .buttoncontainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 50%;
+        text-align: left;
+      }
+      #container {
+        margin: 300px auto;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #matrix {
+        display: block;  
+      }
+      .buttoncontainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 50%;
+        text-align: left;
+      }
+      #container {
+        margin: 300px auto;
+    }
+}

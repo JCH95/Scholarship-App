@@ -1,23 +1,10 @@
-// Start of JavaScript code
-// Show apply modal
-// var modal = document.getElementsByClassName("modal")[0];
-// function showModal() {
-//     modal.style.display = "block"
-// }
-// // Hide apply modal
-// function hiddenModal() {
-//     modal.style.display = "none"
-// }
-
 // Weather API
-
 let weather = {
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=washington+dc&units=imperial&appid=c369f155016b5438a2e3977424bf7b67")
             .then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
-
 
     displayWeather: function (data) {
         const { name } = data;
