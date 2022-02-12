@@ -1,137 +1,175 @@
 /* Start of CSS Code */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
-    color: navy;
-    margin :0;
-    padding: 0;
-    
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  color: navy;
+  margin: 0;
+  padding: 0;
 }
 
-.buttoncontainer a,#applybutton {
-    display: inline-block;
-    text-decoration: none;
-    padding: 15px;
-    background-color: navy;
-    border: 2px solid white;
-    color: white;
-    margin: 10px;
-    width: 200px;
-    cursor: pointer;
+.buttoncontainer a,
+#applybutton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  background-color: navy;
+  border: 2px solid white;
+  color: white;
+  margin: 10px;
+  width: 200px;
+  cursor: pointer;
 }
 
 .buttoncontainer {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-   
-    top: 30px;
-    right: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  top: 30px;
+  right: 30px;
 }
 
 .subtitle {
-   margin-top: 15px;
-    font-size: 28px;
+  margin-top: 15px;
+  font-size: 28px;
 }
 
 .gradient {
-    width: 100%;
-    height: 150px;
-    background-image: linear-gradient(to right,navy,navy);
-    margin: 0px 0 20px 0;
-    display: none;
-    
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(to right, navy, navy);
+  margin: 0px 0 20px 0;
+  display: none;
 }
 
-ul,h3,p {
-    text-align: left;
-
+ul,
+h3,
+p {
+  text-align: left;
 }
 
 img {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero {
-    background-image: url("../images/washingtondc.jpg");
-    height: 100vh;
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    text-align: center;
+  background-image: url("../images/washingtondc.jpg");
+  height: 100vh;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
 }
 
 h1 {
-    font-style: italic;
-    position: absolute;
-    width: 100%;
-    top: 15px;
-    color: white;
+  font-style: italic;
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  color: white;
 }
 
 .modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    background-color: rgba(0,0, 0, .5);
-    display: none;
-
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
-.modal div{
-    background-color: white;
-    margin: 13% auto;
-    width: 500px;
-    height: 500px;
-    color: red;
-    border-radius: 10%;
-    font-size: 30px;
-    padding: 55px 10px;
-    position: relative;
+.modal div {
+  background-color: white;
+  margin: 13% auto;
+  width: 500px;
+  height: 500px;
+  color: red;
+  border-radius: 10%;
+  font-size: 30px;
+  padding: 55px 10px;
+  position: relative;
 }
 
-#closebutton{
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
+#closebutton {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 50px;
-    font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  font-style: italic;
 }
 
 /* Weather API CSS */
 
 .weather {
-    color: white;
-    font-size: 100%;
-    position: absolute;
-    margin: 20px;
+  color: white;
+  font-size: 100%;
+  position: absolute;
+  margin: 20px;
 }
 
 .weatherApi {
-    padding: 20px;
+  padding: 20px;
 }
 
 hr {
-    width: 95%;
-    border-width: 1px;
-    color: navy;
-    border-style: solid;
+  width: 95%;
+  border-width: 1px;
+  color: navy;
+  border-style: solid;
 }
 
+/* Media Query */
+
+@media screen and (max-width: 480px) {
+  #weather {
+    display: none;
+  }
+  #sticky {
+    padding: 0 auto;
+  }
+  .buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 25% auto;
+    max-width: 50%;
+    text-align: left;
+  }
+  #media, #media2, #media3, #media4, #media5 {
+      margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #weather {
+    display: none;
+  }
+  .buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 25% auto;
+    max-width: 50%;
+    text-align: left;
+  }
+  #sticky {
+    padding: 0 auto;
+  }
+  #media, #media2, #media3, #media4, #media5 {
+      margin: 0 auto;
+  }
+}
