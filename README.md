@@ -1,7 +1,7 @@
 ## 🌟 The Socitey of Martha Washington Scholarship Application  
 
 <img src="https://github.com/JCH95/Scholarship-App/blob/67a873f91c87fafebaccbc9a6e1754e05bb52961/Develop/assets/images/logo_blue.jpg" align="right"
-     alt="Society Logo" width="120" height="178">
+     alt="Society Logo" width="100" height="100">
 This website will help schools and other organizations present their scholarship rewards and requirements.
 Applicants would be able to apply directly on the website and school officials will be able to view 
 and grade applications. 
